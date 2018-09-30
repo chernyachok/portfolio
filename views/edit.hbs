@@ -1,0 +1,22 @@
+<form enctype="Content-Type: application/json" method="post" action="/admin/edit/{{data._id}}" >
+
+  <div class="form-group">
+    <label for="formGroupExampleInput">Project Name</label>
+    <input type="text" class="form-control" name="projectName" placeholder="name" value="{{data.project_name}}">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Description</label>
+    <textarea class="form-control" name="description" placeholder="description of a project">{{data.description}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Service</label>
+    <input type="text" class="form-control" name="service" placeholder="service" value="{{data.service}}">
+  </div>
+  <div class="form-group">
+   <label for="exampleFormControlFile1">Project image</label>
+   <input type="text" class="form-control" name="thumbnail" placeholder="link to your image">
+ </div>
+ <div>
+   <input type="submit" class="btn btn-primary" value="Send">
+ </div>
+</form>
